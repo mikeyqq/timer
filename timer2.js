@@ -17,11 +17,17 @@ if (key === '\u0003') {
 };
 
 if(key === 'b') {
-  process.stdout.write('beep');
+  process.stdout.write('\nbeep');
 }
 
-for(let num in numInput)
+for(let num in numInput) {
 if(key === numInput[num]) {
-  process.stdout.write(`\nsetting timer for x seconds...${numInput[num]}`);
-  setTimeout(beeep, numInput[num] * 1000);
+  process.stdout.write(`\nsetting timer for ${numInput[num]} seconds...`);
+  setTimeout(beeep, numInput[num] * 1000)
+
 }
+}
+
+
+
+});
